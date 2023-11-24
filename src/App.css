@@ -63,6 +63,7 @@ a {
   font-family: "Poppins-Bold";
   color: #cdcdff;
   margin-bottom: 3%;
+  font-size: 3.6rem;
 }
 
 .heading-tertiary {
@@ -71,3 +72,70 @@ a {
   font-size: 3.2rem;
   margin-bottom: 3%;
 }
+
+@media (max-width: 567px) {
+  .heading-primary {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .heading-secondary {
+    color: #cdcdff;
+    margin-bottom: 8%;
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+    margin-block: 8%;
+    text-align: left;
+    padding-inline: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    color: #cdcdff;
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .heading-tertiary {
+    font-size: 2.8rem;
+    margin-block: 6%;
+    padding-inline: 5%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+  }
+}
+
+/*
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) { ... }
+
+*/

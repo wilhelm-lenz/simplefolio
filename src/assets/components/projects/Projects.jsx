@@ -4,7 +4,7 @@ import "../card/Card.css";
 const Projects = () => {
   return (
     <section id="projects" className="section-projects">
-      <h2 className="heading-secondary">PROJECTS</h2>
+      <h2 className="heading-secondary headline-projects">PROJECTS</h2>
       <div className="cards-wrapper">
         <Card
           headline={"Project 1"}

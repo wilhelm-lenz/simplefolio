@@ -28,3 +28,29 @@
   background-size: 100% 0.3rem;
   cursor: pointer;
 }
+
+@media (max-width: 567px) {
+  .footer {
+    margin-top: 30%;
+    text-align: left;
+  }
+
+  .copyright {
+    padding-inline: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    margin-top: 16%;
+  }
+  .headline-contact {
+    padding-bottom: 4%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .footer {
+    margin-top: 12%;
+  }
+}

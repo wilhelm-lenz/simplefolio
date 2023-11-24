@@ -23,3 +23,54 @@
   transform: translateY(-10%);
   cursor: pointer;
 }
+
+@media (max-width: 567px) {
+  .skills-wrapper {
+    padding-inline: 5%;
+    margin-top: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-skills {
+    margin-top: 30%;
+  }
+
+  .skills-wrapper {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-skills {
+    margin-top: 16%;
+  }
+
+  .skills-wrapper {
+    width: 60%;
+    margin-top: 8%;
+  }
+}
+
+@media (min-width: 820px) {
+  .section-skills {
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .section-skills {
+    margin-top: 16%;
+  }
+
+  .skills-wrapper {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-skills {
+    margin-top: 16%;
+  }
+}
