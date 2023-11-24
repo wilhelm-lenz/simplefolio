@@ -1,0 +1,10 @@
+.section-projects {
+  margin-bottom: 8%;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  gap: 4%;
+  justify-content: center;
+}

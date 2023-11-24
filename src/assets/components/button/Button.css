@@ -1,0 +1,22 @@
+.btn {
+  font-family: "Poppins-Medium";
+  border: 2px solid #90a0d9;
+  color: #90a0d9;
+  font-size: 1.8rem;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(to left, transparent 50%, #90a0d9 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  border: 2px solid #90a0d9;
+  color: #23283e;
+  font-size: 1.8rem;
+  padding: 1.2rem 2rem;
+  background-position: left;
+}

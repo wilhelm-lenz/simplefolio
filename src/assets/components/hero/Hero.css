@@ -1,0 +1,15 @@
+.section-hero {
+  text-align: center;
+}
+
+.heading-primar-author {
+  color: #90a0d9;
+  font-family: "Poppins-Bold";
+}
+
+.hero-description {
+  color: #bdbddd;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}

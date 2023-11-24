@@ -1,0 +1,76 @@
+/* 
+box-shadow: 0 0 0 10px rgba(33, 37, 56, 0.7), 0 0 0 20px rgba(33, 37, 56, 0.5),
+    0 0 0 30px rgba(33, 37, 56, 0.3), 0 0 0 45px rgba(33, 37, 56, 0.15);
+*/
+
+.card {
+  background-color: #23283e;
+  padding-block: 8% 16%;
+  border: 1px solid #2a2f4c;
+  position: relative;
+  margin-top: 8%;
+  transition: all 0.5s ease-out;
+}
+
+.card:hover,
+.card:active,
+.card:focus {
+  transform: translateY(-3%);
+  background-color: #23283e;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border: 1px solid #2a2f4c;
+  background-color: #23283e;
+  padding: 3rem;
+}
+
+.card:hover:before {
+  box-shadow: 0 0 10px 1px #cdcdff;
+  cursor: pointer;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border-radius: 1.6rem;
+  box-shadow: 0 0 0 10px rgba(33, 37, 56, 0.7), 0 0 0 20px rgba(33, 37, 56, 0.5),
+    0 0 0 30px rgba(33, 37, 56, 0.3), 0 0 0 45px rgba(33, 37, 56, 0.15);
+}
+
+.card-headline {
+  font-size: 2.4rem;
+  color: #cdcdff;
+  font-family: "Poppins-SemiBold";
+}
+
+.card-description {
+  color: #bdbddd;
+  width: 70%;
+  margin: 6% auto 8%;
+}
+.card-tech-stack-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 4%;
+}
+
+.card-tech-stack-item {
+  color: #cdcdff;
+  font-family: "Poppins-Medium";
+  font-size: 1.4rem;
+}

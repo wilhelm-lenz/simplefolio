@@ -1,0 +1,25 @@
+.section-skills {
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  width: 36%;
+  margin: 0 auto;
+}
+
+.skill {
+  background-color: #2a2f4c;
+  color: #bdbddd;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.5s ease-out;
+}
+
+.skill:hover {
+  box-shadow: 0 0 5px 1px #cdcdff;
+  transform: translateY(-10%);
+  cursor: pointer;
+}

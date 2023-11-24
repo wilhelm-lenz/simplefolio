@@ -1,0 +1,35 @@
+.section-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  margin-bottom: 8%;
+}
+
+.logo {
+  color: #90a0d9;
+  font-size: 1.8rem;
+  font-family: "Poppins-Bold";
+}
+
+.nav-bar {
+  display: flex;
+  column-gap: 3rem;
+}
+
+.nav-items {
+  color: #bdbddd;
+  padding-bottom: 0.2rem;
+  background-image: linear-gradient(#90a0d9, #90a0d9);
+  background-size: 0% 0.4rem;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s linear;
+}
+
+.nav-items:hover,
+.nav-items:active,
+.nav-items:focus {
+  color: #90a0d9;
+  background-size: 100% 0.4rem;
+}
