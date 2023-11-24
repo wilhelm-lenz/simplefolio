@@ -1,19 +1,17 @@
-const Nav = () => {
+const Nav = (props) => {
   return (
     <section className="section-navigation">
       <a href="#" className="logo">
         JS.
       </a>
       <nav className="nav-bar">
-        <a className="nav-items" href="#projects">
-          projects
-        </a>
-        <a className="nav-items" href="#skills">
-          skills
-        </a>
-        <a className="nav-items" href="#contact">
-          contact
-        </a>
+        {props.navLinks.map((navLink) => {
+          return (
+            <a key={navLink} className="nav-items" href={navLink}>
+              {navLink}
+            </a>
+          );
+        })}
       </nav>
     </section>
   );
