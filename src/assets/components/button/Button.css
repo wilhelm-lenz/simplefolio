@@ -11,6 +11,29 @@
   transition: all 0.2s ease-out;
 }
 
+.btn-light {
+  font-family: "Poppins-Medium";
+  border: 2px solid #2978b5;
+  color: #2978b5;
+  font-size: 1.8rem;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(to left, transparent 50%, #2978b5 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus {
+  border: 2px solid #2978b5;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1.2rem 2rem;
+  background-position: left;
+}
+
 .btn:hover,
 .btn:active,
 .btn:focus {
@@ -24,15 +47,13 @@
 @media (max-width: 567px) {
   .btn {
     margin-left: 5%;
-    padding: 0.6rem 1.2rem;
+  }
+  .btn-light {
+    margin-left: 5%;
   }
 }
 
 @media (min-width: 1200px) {
-  .btn {
-    padding: 0.8rem 1.6rem;
-  }
-
   .heading-tertiary {
     font-size: 3rem;
   }

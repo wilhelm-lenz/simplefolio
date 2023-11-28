@@ -1,12 +1,14 @@
 import Nav from "../nav/Nav";
 import Hero from "../hero/Hero";
-import "../nav/Nav.css";
-import "../hero/Hero.css";
-
-const Header = () => {
+import "./Header.css";
+const Header = ({ setDarkMode, darkMode }) => {
   return (
     <header className="header">
-      <Nav navLinks={["projects", "skills", "contact"]} />
+      <Nav
+        navLinks={["projects", "skills", "contact"]}
+        setDarkMode={setDarkMode}
+        darkMode={darkMode}
+      />
       <Hero
         author={"Wilhelm Lenz."}
         headingSub={"A Front End Developer."}
@@ -14,6 +16,7 @@ const Header = () => {
 perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
       modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
       minima consectetur.`}
+        darkMode={darkMode}
       />
     </header>
   );

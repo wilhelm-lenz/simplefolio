@@ -1,12 +1,15 @@
-const Skills = (props) => {
-  console.log(props);
+import "./Skills.css";
+
+const Skills = ({ skills, darkMode }) => {
   return (
     <section id="skills" className="section-skills">
-      <h2 className="heading-secondary">SKILLS</h2>
+      <h2 className={darkMode ? "heading-secondary-dark" : "heading-secondary"}>
+        SKILLS
+      </h2>
       <div className="skills-wrapper">
-        {props.skills.map((skill) => {
+        {skills.map((skill) => {
           return (
-            <span key={skill} className="skill">
+            <span key={skill} className={darkMode ? "skill-dark" : "skill"}>
               {skill}
             </span>
           );

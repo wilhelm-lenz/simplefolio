@@ -1,13 +1,11 @@
 import Projects from "../projects/Projects";
 import Skills from "../skills/Skills";
+import "./Main.css";
 
-import "../projects/Projects.css";
-import "../skills/Skills.css";
-
-const Main = () => {
+const Main = ({ darkMode }) => {
   return (
     <main className="main">
-      <Projects />
+      <Projects darkMode={darkMode} />
       <Skills
         skills={[
           "HTML",
@@ -19,6 +17,7 @@ const Main = () => {
           "Git",
           "UI/UX",
         ]}
+        darkMode={darkMode}
       />
     </main>
   );

@@ -6,6 +6,10 @@ colors:
   - #bdbddd; 
   - #cdcdff; 
   - #90a0d9
+
+  - #fff;  
+  - #444;  
+  - #2978b5;
 */
 
 @font-face {
@@ -48,6 +52,16 @@ body {
   font-family: "Poppins-Regular";
 }
 
+svg {
+  width: 2.4rem;
+  fill: #bdbddd;
+}
+
+svg:hover {
+  cursor: pointer;
+  fill: #bdbddd60;
+}
+
 a {
   text-decoration: none;
 }
@@ -59,9 +73,23 @@ a {
   margin-bottom: 2%;
 }
 
+.heading-primary-dark {
+  font-size: 6.4rem;
+  font-family: "Poppins-Bold";
+  color: #444;
+  margin-bottom: 2%;
+}
+
 .heading-secondary {
   font-family: "Poppins-Bold";
   color: #cdcdff;
+  margin-bottom: 3%;
+  font-size: 3.6rem;
+}
+
+.heading-secondary-dark {
+  font-family: "Poppins-Bold";
+  color: #444;
   margin-bottom: 3%;
   font-size: 3.6rem;
 }
@@ -73,8 +101,28 @@ a {
   margin-bottom: 3%;
 }
 
+.heading-tertiary-dark {
+  color: #444;
+  font-family: "Poppins-Bold";
+  font-size: 3.2rem;
+  margin-bottom: 3%;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.inline-padding {
+  padding-inline: 5%;
+}
+
 @media (max-width: 567px) {
   .heading-primary {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .heading-primary-dark {
     font-size: 3rem;
     text-align: left;
   }
@@ -86,7 +134,21 @@ a {
     text-align: left;
   }
 
+  .heading-secondary-dark {
+    color: #444;
+    margin-bottom: 8%;
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
   .heading-tertiary {
+    font-size: 1.8rem;
+    margin-block: 8%;
+    text-align: left;
+    padding-inline: 5%;
+  }
+
+  .heading-tertiary-dark {
     font-size: 1.8rem;
     margin-block: 8%;
     text-align: left;
@@ -99,13 +161,29 @@ a {
     font-size: 4.4rem;
   }
 
+  .heading-primary-dark {
+    font-size: 4.4rem;
+  }
+
   .heading-secondary {
     color: #cdcdff;
     font-size: 3rem;
     margin-bottom: 0;
   }
 
+  .heading-secondary-dark {
+    color: #444;
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
   .heading-tertiary {
+    font-size: 2.8rem;
+    margin-block: 6%;
+    padding-inline: 5%;
+  }
+
+  .heading-tertiary-dark {
     font-size: 2.8rem;
     margin-block: 6%;
     padding-inline: 5%;
@@ -117,7 +195,15 @@ a {
     font-size: 5.2rem;
   }
 
+  .heading-primary-dark {
+    font-size: 5.2rem;
+  }
+
   .heading-tertiary {
+    font-size: 3rem;
+  }
+
+  .heading-tertiary-dark {
     font-size: 3rem;
   }
 }

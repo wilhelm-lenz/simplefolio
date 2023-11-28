@@ -1,5 +1,9 @@
-const Button = (props) => {
-  return <button className="btn">{props.contentText}</button>;
+import "./Button.css";
+
+const Button = ({ contentText, darkMode }) => {
+  return (
+    <button className={darkMode ? "btn-light" : "btn"}>{contentText}</button>
+  );
 };
 
 export default Button;

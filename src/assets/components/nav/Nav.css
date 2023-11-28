@@ -1,7 +1,7 @@
 .section-navigation {
   display: flex;
   justify-content: space-between;
-  margin-top: 4%;
+  padding-top: 4%;
   margin-bottom: 8%;
 }
 
@@ -27,9 +27,36 @@
   transition: background-size 0.3s linear;
 }
 
+.nav-items-dark {
+  color: #444;
+  padding-bottom: 0.2rem;
+  background-image: linear-gradient(#2978b5, #2978b5);
+  background-size: 0% 0.4rem;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s linear;
+}
+
 .nav-items:hover,
 .nav-items:active,
 .nav-items:focus {
   color: #90a0d9;
   background-size: 100% 0.4rem;
+}
+
+.nav-items-dark:hover,
+.nav-items-dark:active,
+.nav-items-dark:focus {
+  color: #2978b5;
+  background-size: 100% 0.4rem;
+}
+
+.on-hover-nav-icon-dark svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.on-hover-nav-icon-dark svg path:hover {
+  fill: #2978b560;
 }

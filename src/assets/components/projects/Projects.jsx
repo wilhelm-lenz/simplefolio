@@ -1,32 +1,29 @@
 import Card from "../card/Card";
-import "../card/Card.css";
+import "./Projects.css";
+import cardContentData from "../../data/cardContentData";
 
-const Projects = () => {
+const Projects = ({ darkMode }) => {
   return (
     <section id="projects" className="section-projects">
-      <h2 className="heading-secondary headline-projects">PROJECTS</h2>
+      <h2
+        className={`headline-projects ${
+          darkMode ? "heading-secondary-dark" : "heading-secondary "
+        }`}
+      >
+        PROJECTS
+      </h2>
       <div className="cards-wrapper">
-        <Card
-          headline={"Project 1"}
-          description={
-            "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam."
-          }
-          techStack={["Javascript", "React", "SASS"]}
-        />
-        <Card
-          headline={"Project 2"}
-          description={
-            "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam."
-          }
-          techStack={["Javascript", "React", "SASS"]}
-        />
-        <Card
-          headline={"Project 3"}
-          description={
-            "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam."
-          }
-          techStack={["Javascript", "React", "SASS"]}
-        />
+        {cardContentData.map((singleCardContent) => (
+          <Card
+            key={singleCardContent.id}
+            headline={singleCardContent.headline}
+            description={singleCardContent.description}
+            techStack={singleCardContent.techStack}
+            gitHubLink={singleCardContent.gitHubLink}
+            previewSiteLink={singleCardContent.previewSiteLink}
+            darkMode={darkMode}
+          />
+        ))}
       </div>
     </section>
   );

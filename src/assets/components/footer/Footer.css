@@ -29,6 +29,27 @@
   cursor: pointer;
 }
 
+.copyright-light {
+  margin-block: 10% 3%;
+  padding-bottom: 0.4rem;
+  font-family: "Poppins-Bold";
+  color: #2978b5;
+  font-size: 1.4rem;
+  background-image: linear-gradient(#2978b5, #2978b5);
+  background-size: 0% 0.3rem;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s linear;
+  display: inline-block;
+}
+
+.copyright-light:hover {
+  cursor: pointer;
+  background-size: 100% 0.3rem;
+  cursor: pointer;
+}
+
 @media (max-width: 567px) {
   .footer {
     margin-top: 30%;
@@ -38,12 +59,17 @@
   .copyright {
     padding-inline: 5%;
   }
+
+  .copyright-light {
+    padding-inline: 5%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer {
     margin-top: 16%;
   }
+
   .headline-contact {
     padding-bottom: 4%;
   }

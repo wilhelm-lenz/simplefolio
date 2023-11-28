@@ -1,13 +1,21 @@
 import Button from "../button/Button";
-import "../button/Button.css";
+import "./Footer.css";
 
-const Footer = () => {
+const Footer = ({ darkMode }) => {
   return (
     <footer id="contact" className="footer">
-      <h2 className="heading-secondary headline-contact">CONTACT</h2>
-      <Button contentText={"email me"} />
+      <h2
+        className={`headline-contact ${
+          darkMode ? "heading-secondary-dark" : "heading-secondary"
+        }`}
+      >
+        CONTACT
+      </h2>
+      <Button contentText={"email me"} darkMode={darkMode} />
       <div className="copiright-wrapper">
-        <p className="copyright">Created By Wilhelm Lenz</p>
+        <p className={darkMode ? "copyright-light" : "copyright"}>
+          Created By Wilhelm Lenz
+        </p>
       </div>
     </footer>
   );
