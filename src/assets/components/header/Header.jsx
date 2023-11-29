@@ -16,7 +16,6 @@ const Header = ({ setDarkMode, darkMode }) => {
 perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
       modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
       minima consectetur.`}
-        darkMode={darkMode}
       />
     </header>
   );

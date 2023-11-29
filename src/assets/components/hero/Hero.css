@@ -8,6 +8,10 @@
   font-family: "Poppins-Bold";
 }
 
+.light .heading-primar-author {
+  color: #2978b5;
+}
+
 .hero-description {
   color: #bdbddd;
   max-width: 60rem;
@@ -15,21 +19,11 @@
   margin-bottom: 3%;
 }
 
-.hero-description-dark {
+.light .hero-description {
   color: #444;
-  max-width: 60rem;
-  margin: 0 auto;
-  margin-bottom: 3%;
 }
 
 .resume-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 2rem;
-}
-
-.resume-wrapper-dark {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,12 +40,12 @@
   fill: #bdbddd60;
 }
 
-.resume-wrapper-dark svg {
+.light .resume-wrapper svg {
   width: 2.4rem;
   fill: #444;
 }
 
-.resume-wrapper-dark svg:hover {
+.light .resume-wrapper svg:hover {
   cursor: pointer;
   fill: #44444460;
 }
@@ -67,16 +61,7 @@
     padding-inline: 5%;
   }
 
-  .hero-description-dark {
-    margin-bottom: 12%;
-    padding-inline: 5%;
-  }
-
   .resume-wrapper {
-    justify-content: flex-start;
-  }
-
-  .resume-wrapper-dark {
     justify-content: flex-start;
   }
 }
@@ -89,18 +74,10 @@
   .hero-description {
     margin-bottom: 8%;
   }
-
-  .hero-description-dark {
-    margin-bottom: 8%;
-  }
 }
 
 @media (min-width: 1200px) {
   .hero-description {
-    margin-bottom: 4%;
-  }
-
-  .hero-description-dark {
     margin-bottom: 4%;
   }
 }

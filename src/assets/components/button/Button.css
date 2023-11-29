@@ -11,34 +11,30 @@
   transition: all 0.2s ease-out;
 }
 
-.btn-light {
-  font-family: "Poppins-Medium";
-  border: 2px solid #2978b5;
-  color: #2978b5;
-  font-size: 1.8rem;
-  padding: 1.2rem 2rem;
-  background: linear-gradient(to left, transparent 50%, #2978b5 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  cursor: pointer;
-  transition: all 0.2s ease-out;
-}
-
-.btn-light:hover,
-.btn-light:active,
-.btn-light:focus {
-  border: 2px solid #2978b5;
-  color: #fff;
-  font-size: 1.8rem;
-  padding: 1.2rem 2rem;
-  background-position: left;
-}
-
 .btn:hover,
 .btn:active,
 .btn:focus {
   border: 2px solid #90a0d9;
   color: #23283e;
+  font-size: 1.8rem;
+  padding: 1.2rem 2rem;
+  background-position: left;
+}
+
+.light .btn {
+  border: 2px solid #2978b5;
+  color: #2978b5;
+  background: linear-gradient(to left, transparent 50%, #2978b5 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.2s ease-out;
+}
+
+.light .btn:hover,
+.light .btn:active,
+.light .btn:focus {
+  border: 2px solid #2978b5;
+  color: #fff;
   font-size: 1.8rem;
   padding: 1.2rem 2rem;
   background-position: left;

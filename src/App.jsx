@@ -11,8 +11,8 @@ function App() {
   return (
     <div className={`'inline-padding' ${darkMode ? "light" : null}`}>
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
-      <Main darkMode={darkMode} />
-      <Footer darkMode={darkMode} />
+      <Main />
+      <Footer />
     </div>
   );
 }

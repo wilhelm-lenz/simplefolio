@@ -1,15 +1,13 @@
 import "./Skills.css";
 
-const Skills = ({ skills, darkMode }) => {
+const Skills = ({ skills }) => {
   return (
     <section id="skills" className="section-skills">
-      <h2 className={darkMode ? "heading-secondary-dark" : "heading-secondary"}>
-        SKILLS
-      </h2>
+      <h2 className="heading-secondary">SKILLS</h2>
       <div className="skills-wrapper">
         {skills.map((skill) => {
           return (
-            <span key={skill} className={darkMode ? "skill-dark" : "skill"}>
+            <span key={skill} className="skill">
               {skill}
             </span>
           );

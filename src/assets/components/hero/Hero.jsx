@@ -3,32 +3,16 @@ import GitHub from "../svg/GitHub";
 import LinkedIn from "../svg/LinkedIn";
 import "./Hero.css";
 
-const Hero = ({ author, headingSub, description, darkMode }) => {
+const Hero = ({ author, headingSub, description }) => {
   return (
     <section className="section-hero">
-      <h1
-        className={`${darkMode ? "heading-primary-dark" : "heading-primary"}`}
-      >
-        Hi, I am{" "}
-        <span
-          className="heading-primar-author"
-          style={darkMode ? { color: "#2978b5" } : { color: "" }}
-        >
-          {author}
-        </span>
+      <h1 className="heading-primary">
+        Hi, I am <span className="heading-primar-author">{author}</span>
       </h1>
-      <h3 className={darkMode ? "heading-tertiary-dark" : "heading-tertiary"}>
-        {headingSub}
-      </h3>
-      <p className={darkMode ? "hero-description-dark" : "hero-description"}>
-        {description}
-      </p>
-      <div
-        className={`${darkMode ? "resume-wrapper-dark" : "resume-wrapper"} ${
-          darkMode ? "resume-wrapper-dark svg" : "resume-wrapper svg"
-        }`}
-      >
-        <Button contentText={"resume"} darkMode={darkMode} />
+      <h3 className="heading-tertiary">{headingSub}</h3>
+      <p className="hero-description">{description}</p>
+      <div className="resume-wrapper">
+        <Button contentText={"resume"} />
         <a href="https://github.com/wilhelm-lenz" target="_blank">
           <GitHub />
         </a>

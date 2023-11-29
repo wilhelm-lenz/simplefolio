@@ -73,11 +73,8 @@ a {
   margin-bottom: 2%;
 }
 
-.heading-primary-dark {
-  font-size: 6.4rem;
-  font-family: "Poppins-Bold";
+.light .heading-primary {
   color: #444;
-  margin-bottom: 2%;
 }
 
 .heading-secondary {
@@ -87,11 +84,8 @@ a {
   font-size: 3.6rem;
 }
 
-.heading-secondary-dark {
-  font-family: "Poppins-Bold";
+.light .heading-secondary {
   color: #444;
-  margin-bottom: 3%;
-  font-size: 3.6rem;
 }
 
 .heading-tertiary {
@@ -101,11 +95,8 @@ a {
   margin-bottom: 3%;
 }
 
-.heading-tertiary-dark {
+.light .heading-tertiary {
   color: #444;
-  font-family: "Poppins-Bold";
-  font-size: 3.2rem;
-  margin-bottom: 3%;
 }
 
 .light {
@@ -122,11 +113,6 @@ a {
     text-align: left;
   }
 
-  .heading-primary-dark {
-    font-size: 3rem;
-    text-align: left;
-  }
-
   .heading-secondary {
     color: #cdcdff;
     margin-bottom: 8%;
@@ -134,21 +120,11 @@ a {
     text-align: left;
   }
 
-  .heading-secondary-dark {
+  .light .heading-secondary {
     color: #444;
-    margin-bottom: 8%;
-    font-size: 2.4rem;
-    text-align: left;
   }
 
   .heading-tertiary {
-    font-size: 1.8rem;
-    margin-block: 8%;
-    text-align: left;
-    padding-inline: 5%;
-  }
-
-  .heading-tertiary-dark {
     font-size: 1.8rem;
     margin-block: 8%;
     text-align: left;
@@ -161,29 +137,17 @@ a {
     font-size: 4.4rem;
   }
 
-  .heading-primary-dark {
-    font-size: 4.4rem;
-  }
-
   .heading-secondary {
     color: #cdcdff;
     font-size: 3rem;
     margin-bottom: 0;
   }
 
-  .heading-secondary-dark {
+  .light .heading-secondary {
     color: #444;
-    font-size: 3rem;
-    margin-bottom: 0;
   }
 
   .heading-tertiary {
-    font-size: 2.8rem;
-    margin-block: 6%;
-    padding-inline: 5%;
-  }
-
-  .heading-tertiary-dark {
     font-size: 2.8rem;
     margin-block: 6%;
     padding-inline: 5%;
@@ -195,33 +159,7 @@ a {
     font-size: 5.2rem;
   }
 
-  .heading-primary-dark {
-    font-size: 5.2rem;
-  }
-
   .heading-tertiary {
     font-size: 3rem;
   }
-
-  .heading-tertiary-dark {
-    font-size: 3rem;
-  }
 }
-
-/*
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (max-width: 992px) { ... }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) { ... }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (max-width: 1400px) { ... }
-
-*/
